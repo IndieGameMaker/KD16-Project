@@ -253,3 +253,77 @@ git push origin develop
 *LightingData*.asset binary
 ```
 ---
+
+## XR InputSystem 사용법
+
+```cs
+using System.Collections;  
+using System.Collections.Generic;  
+using UnityEngine;  
+using UnityEngine.InputSystem;  
+using UnityEngine.XR;  
+using UnityEngine.UI;  
+  
+public class InputController : MonoBehaviour  
+{  
+    [SerializeField]  
+    private InputActionProperty indexTrigger;  
+    [SerializeField]  
+    private InputActionProperty grab;  
+  
+    [SerializeField]  
+    private InputActionProperty joystick;  
+  
+    [SerializeField]  
+    private InputActionProperty grabPressed;  
+  
+    public InputActionProperty grabTouched;  
+  
+    [SerializeField]  
+    private Image slide;  
+  
+  
+    private void Awake()  
+    {  
+        slide.fillAmount = 0.0f;  
+    }  
+
+	private Vector2 pos;
+	
+    private void OnEnable()  
+    {  
+        indexTrigger.action.performed += ctx =>  
+        {  
+            Debug.Log("Index Trigger Pressed !!!");  
+        };  
+  
+        grab.action.performed += ctx =>  
+        {  
+            Debug.Log("Grab Pressed !!!");  
+        };  
+  
+        joystick.action.performed += ctx =>  
+        {  
+            pos = ctx.ReadValue<Vector2>();  
+            Debug.Log($"{pos.x}/ {pos.y}");  
+        };  
+  
+        grabPressed.action.performed += GrabPressed;  
+  
+    }  
+
+	Update()
+	{
+		Vector3 moveDir = new Vector3(pos.x, 0.0f, pos.y);
+		GetComponent<CharacterController>().SimpleMove(movedir * speed);
+	}
+  
+    private void GrabPressed(InputAction.CallbackContext ctx)  
+    {  
+        float process = ctx.ReadValue<float>();  
+        Debug.Log(process);  
+        slide.fillAmount = process;  
+  
+    }  
+}
+```
