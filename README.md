@@ -374,7 +374,9 @@ public class InputController : MonoBehaviour
 
 ## 최종 발표
 
-### 리허설 순서
+### 발표 리허설
+
+- 2024-05-22 16:00 ~ 17:00
 
 ### 발표 일정
 - 시연 및 발표 : 2024-05-23
