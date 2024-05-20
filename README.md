@@ -337,3 +337,47 @@ public class InputController : MonoBehaviour
     }  
 }
 ```
+
+
+### 프로젝트 발표 문서 작성
+
+- [발표문서 공식 탬플릿](https://docs.google.com/presentation/d/1HYUKU_M5ALghtoDSjGQGM6ADzBeRadT5/edit?usp=sharing&ouid=109306707304462513227&rtpof=true&sd=true)
+
+- 발표문서는 05월 22일까지 아래 구글 드라이브에 업로드해주세요. (별도로 사용한 폰트가 있다면 같이 업로드)
+
+- [발표문서 업로드](https://drive.google.com/drive/folders/1AYGnml2-eHD3uZKP6Ih3Nq1qi4H-jtgv?usp=share_link)
+- PPT로 작성
+
+### 발표 문서 작성
+
+#### 1. 발표문서에 담겨야 할 내용
+
+   - 기획 목적
+   - 개발 구성원 소개 및 담당 업무
+   - 개발 환경
+     - 개발 툴 : Unity, Blender, PhotoShop, ...
+     - 소스 관리 방법(기법) : Github, Trello, Slack, Collaborator, Google Docs, ...
+     - 사용 하드웨어 : Quest, Syn4D, ...
+   - 개발 일정별 진행상황 : [간트차트](https://ko.wikipedia.org/wiki/간트_차트) 또는 엑셀
+   - 구현한 주요 기능
+     - **짧은 동영상 자료**(mp4)를 첨부 (Animated GIF 사용금지)
+   - 개발 후기 : 아쉬웠던 점, 느낀 점, 향후 구현하고 싶은 기능등을 기술.
+
+#### 2. 발표문서 작성시 피해야 할 내용 또는 작성 방식
+
+   - **C# 소스 코드** 복사해 붙여넣기한 후 라인 바이 라인 설명하는 것은 금지한다.
+   - **외부 링크는 금지**한다. (발표장의 인터넷 환경에 따라서 연결 불가한 경우가 있음.)
+   - 파워 포인트의 애니메이션 기능은 기본적으로는 사용하지 않는다. 단, 반드시 필요한 경우 과도하지 않게 사용한다.
+
+
+---
+
+## 최종 발표
+
+### 리허설 순서
+
+### 발표 일정
+- 시연 및 발표 : 2024-05-23
+- 시연 시간 : 12:30 ~ 14:30
+- 발표 장소 : 나폴리
+- 발표 시간 : 14:30 ~ 15:30
